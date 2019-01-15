@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/overview_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradation"
+                android:theme="@style/AppTheme">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/nav_view"
+                    android:text="AktE"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40sp"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/main_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:theme="@style/AppTheme2"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/colorPink"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/add" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/NavigationDrawer"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_relative3"
+        android:id="@+id/nav_relative">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/NavigationHeader"
+            android:src="@drawable/header" />
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lineApp"
+            android:layout_below="@id/image">
+
+        <RelativeLayout
+            android:id="@+id/nav_relative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/IconSize"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon2" />
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationTextHeight"
+                android:gravity="center|left"
+                android:text="カテゴリ"
+                android:textSize="@dimen/NavigationMenuText"
+                android:clickable="true"
+                android:layout_toEndOf="@+id/item_icon"
+                android:layout_marginStart="30dp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_title"
+                android:background="@color/colorPurple"/>
+
+            <ImageView
+                android:id="@+id/item_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/IconSize"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon"
+                android:layout_below="@+id/line" />
+
+            <TextView
+                android:id="@+id/item_title2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationTextHeight"
+                android:gravity="center|left"
+                android:text="デザイン"
+                android:textSize="@dimen/NavigationMenuText"
+                android:clickable="true"
+                android:layout_toEndOf="@+id/item_icon2"
+                android:layout_below="@+id/line"
+                android:layout_marginStart="30dp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_title2"
+                android:background="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/item_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/IconSize"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon2"
+                android:layout_below="@+id/line2" />
+
+            <TextView
+                android:id="@+id/item_title3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationTextHeight"
+                android:gravity="center|left"
+                android:text="お気に入り"
+                android:textSize="@dimen/NavigationMenuText"
+                android:clickable="true"
+                android:layout_toEndOf="@+id/item_icon3"
+                android:layout_below="@+id/line2"
+                android:layout_marginStart="30dp" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_title3"
+                android:background="@color/colorPurple"/>
+
+            <ImageView
+                android:id="@+id/item_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/IconSize"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon"
+                android:layout_below="@+id/line3" />
+
+            <TextView
+                android:id="@+id/item_title4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationTextHeight"
+                android:gravity="center|left"
+                android:text="セキュリティ"
+                android:textSize="@dimen/NavigationMenuText"
+                android:clickable="true"
+                android:layout_toEndOf="@+id/item_icon4"
+                android:layout_below="@+id/line3"
+                android:layout_marginStart="30dp" />
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_title4"
+                android:background="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/item_icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/IconSize"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon2"
+                android:layout_below="@+id/line4" />
+
+            <TextView
+                android:id="@+id/item_title5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationTextHeight"
+                android:gravity="center|left"
+                android:text="ご意見・お問い合わせ"
+                android:textSize="@dimen/NavigationMenuText"
+                android:clickable="true"
+                android:layout_toEndOf="@+id/item_icon5"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/line4"
+                android:layout_marginStart="30dp" />
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/lineApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@+id/app"
+            android:layout_marginBottom="15dp"
+            android:text="Fancy☆ToolApp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:id="@+id/app"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/IconSize"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/culc_icon" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationAppText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/icon"
+                android:gravity="center|left"
+                android:text="xxCuLCxx"
+                android:textSize="@dimen/NavigationMenuText" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/NavigationAppText2"
+                android:layout_below="@id/text1"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/icon"
+                android:layout_marginBottom="10dp"
+                android:text="～計算機アプリ～"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+

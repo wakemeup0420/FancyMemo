@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/table_layout"
+        android:src="@drawable/password" />
+
+    <TextView
+        android:id="@+id/passText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/table_layout"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textColor="@color/colorDeepPink"
+        android:textSize="35dp" />
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="0,1,2,3">
+
+        <TableRow
+            style="?attr/actionBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button7"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="7"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button8"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="8"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button9"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="9"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/back"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="←"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        </TableRow>
+
+        <TableRow
+            style="?attr/actionBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button4"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ten_key"
+                android:text="4"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/button5"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ten_key"
+                android:text="5"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ten_key"
+                android:text="6"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/unicorn"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unicorn_key"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+        </TableRow>
+
+    <TableRow
+        style="?attr/actionBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button1"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ten_key"
+            android:text="3"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/night"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/night_key"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+    </TableRow>
+
+        <TableRow
+            style="?attr/actionBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button0"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="@drawable/ten_key_second"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/done"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/ten_key_second"
+                android:text="OK"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

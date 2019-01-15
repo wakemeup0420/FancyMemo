@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/AlertTitleHeight"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/icon"
+        android:gravity="center"
+        android:text="DeSiGn"
+        android:textColor="#eecaff"
+        android:textSize="@dimen/AlertTitleSize" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/AlertTitleHeight"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon0" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/AlertTitleHeight"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title"
+        android:src="@drawable/icon0" />
+
+    <LinearLayout
+        android:id="@+id/design_layout"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/no_design"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design1"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design2"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design3"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/design_layout2"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/design_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/design4"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design5"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design6"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design7"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/design_layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/design_layout2"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/design8"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design9"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design10"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design11"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/design_layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/design_layout3"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/design12"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design13"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design14"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design15"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/design_layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/design_layout4"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/design16"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design17"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design18"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/design19"
+            android:layout_width="@dimen/DesignSelect"
+            android:layout_height="@dimen/DesignSelect"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/design_layout5" />
+
+</RelativeLayout>

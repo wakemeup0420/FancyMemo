@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="MemoText">25dp</dimen>
+    <dimen name="MemoDataText">20dp</dimen>
+    <dimen name="NavigationDrawer">380dp</dimen>
+    <dimen name="MemoInputText">25dp</dimen>
+    <dimen name="NavigationTextHeight">60dp</dimen>
+    <dimen name="NavigationMenuText">20dp</dimen>
+    <dimen name="IconSize">60dp</dimen>
+    <dimen name="NavigationHeader">110dp</dimen>
+    <dimen name="DesignSelect">60dp</dimen>
+    <dimen name="AlertTitleHeight">40dp</dimen>
+    <dimen name="AlertTitleSize">25dp</dimen>
+    <dimen name="CheckBox">16dp</dimen>
+    <dimen name="AlertTextSize">16dp</dimen>
+    <dimen name="SortItemTextSize">20dp</dimen>
+    <dimen name="SortItemSize">65dp</dimen>
+    <dimen name="NavigationAppText">35dp</dimen>
+    <dimen name="NavigationAppText2">25dp</dimen>
+
+</resources>
